@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+
+
+\title{Problem Set 3}
+
+\author{Alex Hinshaw }
+
+\date{5 February 2019}
+
+
+
+\begin{document}
+
+
+
+\maketitle
+
+\
+section{Questions}
+
+1.) The insurance data set is 5MB 
+
+
+2.) The CSV file was zero lines long before EOL conversion.
+
+
+3.) After the EOL conversion, the CSV file is 36634 lines long.
+
+\end{document}
