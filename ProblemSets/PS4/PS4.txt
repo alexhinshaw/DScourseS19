@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+
+\title{PS4H}
+
+\author{Alex Hinshaw}
+
+\date{12 February 2019}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\section{Introduction}
+
+We've spoken a lot about what I want to do. I think NFL.com will have the most accurate and reliable stats, but they may not have more advanced statistics. I've found a lot of sport statistics sites that may be helpful with the less conventional statisitics.
+
+\end{document}
