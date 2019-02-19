@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+
+\title{PS5Hinshaw}
+
+\author{Alex Hinshaw}
+
+\date{19 February 2019}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\section{Introduction}
+I think I answered all the question in the RMD PDF, but here is a .txt file for good measure.
+
+
+\end{document}
