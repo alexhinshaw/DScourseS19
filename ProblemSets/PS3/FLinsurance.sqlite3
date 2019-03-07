@@ -1,0 +1,22 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE "FLinsurance" (
+policyID INTEGER
+statecode CHAR
+county CHAR
+eqsite INTEGER
+husite INTEGER
+flsite INTEGER
+frsite INTEGER
+tiv2011 INTEGER
+eqsitedeductible INTEGER
+husitedeductible INTEGER
+flsitedeductible INTEGER
+frsitedeductible INTEGER
+pointlat INTEGER
+pointlong INTEGER
+line CHAR
+construct CHAR
+pointgran INTEGER
+);
+COMMIT;
