@@ -1,0 +1,83 @@
+---
+title: "PS 6 for Dr Ransom"
+author: "Alex Hinshaw"
+date: "March 11, 2019"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# PS 6 for Dr Ransom
+## Alex Hinshaw
+### 7 March 2019
+
+#I've decided to look at draft data of NFL quarterback since 2000 to 2015. I want to see the breakdown of quarterbacks drafted per year and per round.
+First, I'm going to look at the per year data. Second, I will break it down by QBs per round. 
+
+I'm downloading a Kaggle dataset that contains every player drafted since 1985.
+The URL is: https://www.kaggle.com/ronaldjgrafjr/nfl-draft-outcomes
+The code and histogram is to follow:
+
+  
+```{r}
+draft.raw <- read.csv("nfl_draft.csv")
+
+NFLqbYEAR <- data.frame(Year=draft.raw$Year,
+                       QBs=draft.raw$Pos)
+
+NFLqbROUND <- data.frame(Round=draft.raw$Rnd,
+                         QBs=draft.raw$Pos)
+
+NFLqbAGE <- data.frame(age=draft.raw$Age,
+                         QBs=draft.raw$Pos)
+
+library(dplyr)
+NFLqbYEAR <- NFLqbYEAR %>% filter(as.character(QBs)=="QB" & Year > 1999)
+
+NFLqbROUND <- NFLqbROUND %>% filter(as.character(QBs)=="QB")
+
+NFLqbAGE <- NFLqbAGE %>% filter(as.character(QBs)=="QB")
+  
+```
+The following will be histograms visually demonstrating the data above. 
+the histograms will be created using the below code:
+NFLqbAGE
+  
+```{r}
+
+Number of QBs Drafted per Year Since 2000
+ggplot(NFLqbYEAR, aes(Year)) + geom_bar()
+
+```
+
+Number of QBs Taken Per Round Since 1985
+ggplot(NFLqbROUND, aes(Round)) + geom_bar()
+
+Age of QB at Draft, 1985-2000 
+ggplot(NFLqbAGE, aes(age)) + geom_bar()
+
+```
+
