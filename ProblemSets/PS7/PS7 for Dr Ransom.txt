@@ -1,0 +1,112 @@
+Summary Statistics of Wage Data}
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Mar 12, 2019 - 12:19:04 PM
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+logwage & 1,686 & 1.622 & 0.388 & 0.005 & 1.358 & 1.936 & 2.261 \\ 
+hgc & 2,244 & 13.099 & 2.521 & 0.000 & 12.000 & 15.000 & 18.000 \\ 
+tenure & 2,231 & 5.978 & 5.510 & 0.000 & 1.583 & 9.333 & 25.917 \\ 
+age & 2,246 & 39.153 & 3.060 & 34 & 36 & 42 & 46 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Mar 12, 2019 - 3:49:48 PM
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & logwage.mean.imp \\ 
+\hline \\[-1.8ex] 
+ hgc & 0.050$^{***}$ \\ 
+  & (0.004) \\ 
+  & \\ 
+ collegenot college grad & 0.168$^{***}$ \\ 
+  & (0.026) \\ 
+  & \\ 
+ tenure & 0.038$^{***}$ \\ 
+  & (0.004) \\ 
+  & \\ 
+ I(tenure$\hat{\mkern6mu}$2) & $-$0.001$^{***}$ \\ 
+  & (0.0002) \\ 
+  & \\ 
+ age & 0.0002 \\ 
+  & (0.002) \\ 
+  & \\ 
+ marriedsingle & $-$0.027$^{**}$ \\ 
+  & (0.014) \\ 
+  & \\ 
+ Constant & 0.708$^{***}$ \\ 
+  & (0.116) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 2,229 \\ 
+R$^{2}$ & 0.147 \\ 
+Adjusted R$^{2}$ & 0.145 \\ 
+Residual Std. Error & 0.308 (df = 2222) \\ 
+F Statistic & 63.973$^{***}$ (df = 6; 2222) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Mar 12, 2019 - 3:59:44 PM
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & logwage & logwage.mean.imp & logwage.pred.imp \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ hgc & 0.062$^{***}$ & 0.050$^{***}$ & 0.059$^{***}$ \\ 
+  & (0.005) & (0.004) & (0.004) \\ 
+  & & & \\ 
+ collegenot college grad & 0.145$^{***}$ & 0.168$^{***}$ & 0.177$^{***}$ \\ 
+  & (0.034) & (0.026) & (0.025) \\ 
+  & & & \\ 
+ tenure & 0.050$^{***}$ & 0.038$^{***}$ & 0.047$^{***}$ \\ 
+  & (0.005) & (0.004) & (0.004) \\ 
+  & & & \\ 
+ I(tenure$\hat{\mkern6mu}$2) & $-$0.002$^{***}$ & $-$0.001$^{***}$ & $-$0.002$^{***}$ \\ 
+  & (0.0003) & (0.0002) & (0.0002) \\ 
+  & & & \\ 
+ age & 0.0004 & 0.0002 & 0.0003 \\ 
+  & (0.003) & (0.002) & (0.002) \\ 
+  & & & \\ 
+ marriedsingle & $-$0.022 & $-$0.027$^{**}$ & $-$0.028$^{**}$ \\ 
+  & (0.018) & (0.014) & (0.013) \\ 
+  & & & \\ 
+ Constant & 0.534$^{***}$ & 0.708$^{***}$ & 0.563$^{***}$ \\ 
+  & (0.146) & (0.116) & (0.112) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Observations & 1,669 & 2,229 & 2,229 \\ 
+R$^{2}$ & 0.208 & 0.147 & 0.223 \\ 
+Adjusted R$^{2}$ & 0.206 & 0.145 & 0.221 \\ 
+Residual Std. Error & 0.344 (df = 1662) & 0.308 (df = 2222) & 0.299 (df = 2222) \\ 
+F Statistic & 72.917$^{***}$ (df = 6; 1662) & 63.973$^{***}$ (df = 6; 2222) & 106.573$^{***}$ (df = 6; 2222) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table}
+\end{document}
