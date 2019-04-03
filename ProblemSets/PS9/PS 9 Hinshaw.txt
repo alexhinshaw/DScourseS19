@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Problem Set 9}
+\author{Alex Hinshaw}
+\date{April 2, 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{L1}
+The optimal value of lambda: 0.0106. 
+\\ The in-sample RMSE: 0.1786990. 
+\\The out-of-sample RMSE: 0.1563961.
+
+\section{L2}
+The new optimal value of lambda: 0.102. 
+\\ The in-sample RMSE: 0.1584583. 
+\\ The out-of-sample RMSE is also 0.1607604.
+
+\section{Elastic Net Model} 
+Elastic optimal value of lambda: 0.0473. 
+\\The optimal value of alpha: 0.0939. The in-sample RMSE is 0.1621832. 
+\\ Out-of-sample RMSE is 0.1605592. 
+
+\\ Use LASSO regression. Can't use linear regression b/c data is non-linear. RMSE values suggest low variance, high bias. Highest bias: Ridge, Lowest: LASSO, In the Middle: Elastic Net
+
+
+\end{document}
